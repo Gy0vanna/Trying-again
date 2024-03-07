@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Will You Go on a Date with Me?</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+			margin: 50px;
+		}
+		h1, h2 {
+			color: #333;
+		}
+		button {
+			padding: 10px 20px;
+			margin: 10px;
+			font-size: 16px;
+			cursor: pointer;
+			border: none;
+			border-radius: 5px;
+			background-color: #4CAF50;
+			color: white;
+		}
+		button:hover {
+			background-color: #45a049;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Will You Go on a Date with Me?</h1>
+	<button onclick="yesFunction()">YES</button>
+	<button onclick="noFunction()">NO</button>
+
+	<div id="yesDiv" style="display: none;">
+		<h2>YIPEEEE!</h2>
+		<img src="https://via.placeholder.com/300" alt="Kissing Face GIF">
+		<button onclick="guessFunction()">GUESS WHERE WE'RE GOING</button>
+	</div>
+
+	<div id="guessDiv" style="display: none;">
+		<h2>ARE YOU READY?</h2>
+		<button onclick="concertFunction()">YES, I'M READY!</button>
+	</div>
+
+	<div id="concertDiv" style="display: none;">
+		<h1>WE'RE GOING TO LANY'S CONCERT!!</h1>
+		<img src="https://via.placeholder.com/300" alt="Confetti Animation GIF">
+	</div>
+
+	<div id="noDiv" style="display: none;">
+		<h2>ARE YOU SURE?</h2>
+		<button onclick="pleaseFunction()">PLEASEEE</button>
+		<button onclick="pookieFunction()">POOKIE PLEASE</button>
+		<button onclick="dontFunction()">DON'T DO THIS TO ME</button>
+		<img src="https://via.placeholder.com/300" alt="Sad Face Crying GIF">
+		<img src="https://via.placeholder.com/300" alt="Sad Face Crying GIF">
+		<img src="https://via.placeholder.com/300" alt="Sad Face Crying GIF">
+	</div>
+
+	<script>
+		function yesFunction() {
+			document.getElementById("yesDiv").style.display = "block";
+		}
+		function noFunction() {
+			document.getElementById("noDiv").style.display = "block";
+		}
+		function guessFunction() {
+			document.getElementById("guessDiv").style.display = "block";
+		}
+		function concertFunction() {
+			document.getElementById("concertDiv").style.display = "block";
+		}
+		function pleaseFunction() {
+			alert("Please, pretty please? 🥺");
+		}
+		function pookieFunction() {
+			alert("Pookie please it'll be fun! 🐻");
+		}
+		function dontFunction() {
+			alert("Don't leave me hanging! 🤕");
+		}
+	</script>
+</body>
+</html>
